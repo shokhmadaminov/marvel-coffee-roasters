@@ -30,6 +30,8 @@
 :root {
     --text-color: #333;
     --brand-green-color: #0a775f;
+    --brand-green-hover-color: rgb(10, 119, 95, 0.8);
+    --brand-green-active-color: rgb(10, 119, 95, 0.6);
 }
 
 /* GLOBAL STYLES */
@@ -71,6 +73,27 @@ img {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+/* BUTTON STYLES */
+.site-btn {
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    border-radius: 100px;
+    display: inline-block;
+}
+.green-btn {
+    background-color: var(--brand-green-color);
+    color: #fff;
+}
+.green-btn:hover {
+    background-color: var(--brand-green-hover-color);
+}
+.green-btn:active {
+    background-color: var(--brand-green-active-color);
 }
 
 
@@ -127,6 +150,46 @@ img {
 }
 .sitenav-item-link:active {
     opacity: 0.6;
+}
+
+/* HERO STYLES */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.hero-text-wrapper {
+    width: 464px;
+    margin: 116px 116px 50px 150px;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.hero-text {
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 34px;
+}
+.hero-img-wrapper {
+    position: relative;
+}
+.hero-round-img {
+    width: 214px;
+    height: 214px;
+    object-fit: contain;
+    position: absolute;
+    top: -81.62px;
+    left: -92px;
+}
+.hero-index-img {
+    width: 710px;
+    height: 696px;
+    object-fit: cover;
 }
 
 
